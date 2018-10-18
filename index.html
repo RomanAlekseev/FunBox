@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!--главаная секция начало-->
+    <main class="main">
+        <div class="container">
+            <!--Главный загаловок-->
+            <h1 class="title">Ты сегодня покормил кота?</h1>
+            <!-- Контейнер для кошачего корма(всех трёх элементов) -->
+            <section class="items">
+            <!--первый элемент+блок с информацией снизу-->
+                <div class="item_element" id="first">
+             <!--блок служит для создания срезаного угла и рамки-->
+                    <div class="border">
+               <!--Упаковка с кормом, без блок с дополнительной информации снизу-->
+                        <div class="item">
+                 <!--Отступы по бокам внутри элементам-->
+                            <div class="item_container">
+                                <p class="item_top">Сказочное заморское яство</p>
+                                <h2 class="item_title">Нямушка</h2>
+                                <p class="taste">с фуа-гра</p>
+                                <p class="portion"><span class="number">10</span> порций</p>
+                                <p class="presents">мышь в подарок</p>
+                            </div>
+                            <img src="img/cat.png" alt="Нямушка" class="cat">
+                            <div class="weight"><span class="mass">0,5</span><br /><span class="kg">кг</span></div>
+                        </div>
+                    </div>
+                   <!--Блок с дополнительной информацией, кнопка купить-->
+                    <div class="info">Чего сидишь? Порадуй котэ, <a href="#" class="buy">купи.</a></div>
+                </div>
+                   <!--Второй элемент-->
+                <div class="item_element" id="second">
+                    <div class="border">
+                        <div class="item">
+                            <div class="item_container">
+                                <p class="item_top">Сказочное заморское яство</p>
+                                <h2 class="item_title">Нямушка</h2>
+                                <p class="taste">с рыбой</p>
+                                <p class="portion"><span class="number">40</span> порций</p>
+                                <p class="presents">2 мыши в подарок</p>
+                            </div>
+                            <img src="img/cat.png" alt="Нямушка" class="cat">
+                            <div class="weight"><span class="mass">2</span><br /><span class="kg">кг</span></div>
+                        </div>
+                    </div>
+                    <div class="info">Чего сидишь? Порадуй котэ, <a href="#" class="buy">купи.</a></div>
+                </div>
+                   <!--Третий элемент-->
+                <div class="item_element" id="third">
+                   <!--Класс .ended служит для отображения закончившегося элемента-->
+                    <div class="border ended">
+                        <div class="item">
+                            <div class="item_container">
+                                <p class="item_top">Сказочное заморское яство</p>
+                                <h2 class="item_title">Нямушка</h2>
+                                <p class="taste">с курой</p>
+                                <div class="item_info">
+                                    <p class="portion"><span class="number">100</span> порций</p>
+                                    <p class="presents">5 мышей в подарок<br />Заказчик доволен</p>
+                                </div>
+                            </div>
+                            <img src="img/cat.png" alt="Нямушка" class="cat">
+                            <div class="weight"><span class="mass">5</span><br /><span class="kg">кг</span></div>
+                        </div>
+                    </div>
+                    <div class="info">Печалька, с курой закончился.</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

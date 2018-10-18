@@ -1,0 +1,211 @@
+@import "fonts.sass"
+html
+    margin: 0
+    padding: 0
+    //Body BG ,pattern+gradient
+body
+    height: 90vh
+    background-image: url(../img/bg.jpg)
+    font-family: sans-serif
+    //gradient
+    &::before 
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: linear-gradient(to top, black 20%, #212121 50%, black 80%)
+      opacity: .3
+//main
+.main
+    position: relative
+    z-index: 2
+.container
+    width: 95%
+    margin: auto
+.title
+    color: #fff
+    font-family: "Exo2"
+    text-align: center
+    margin-top: 3rem
+    font-weight: 300
+//cats foods items all
+.items
+    width: 95%
+    margin: auto
+    margin-top: 2.5rem
+    display: flex
+    justify-content: space-between
+//items 
+.border
+    border-radius: 15px
+    width: 22.5rem
+    height: 35.5rem
+    background-color: #1698d9
+    overflow: visible
+    clip-path: polygon(0 100%, 0 9%, 13.5% 0, 100% 0, 100% 100%)
+    transition: all ease 1s
+    &:hover
+      transform: translate(12px, -5%)
+//one cat-food element without border&info
+.item
+    cursor: pointer
+    background: #fff
+    width: 22rem
+    height: 35rem
+    overflow: hidden
+    border: 4px solid #1698d9 
+    border-radius: 15px
+    clip-path: polygon(0 100%, 0 10%, 15% 0, 100% 0, 100% 100%)
+    transition: all ease 1s
+.item_container
+    width: 80%
+    margin: auto
+//top item title
+.item_top
+    color: #7e7e7e
+    font-size: 1.2rem
+    font-weight: 100
+    padding-top: .5rem
+    margin-bottom: .3rem
+//Brand
+.item_title 
+    font-size: 3.5rem
+    font-weight: bold
+    margin: 0
+//taste
+.taste
+    margin-top: .3rem
+    margin-bottom: 1rem
+    font-size: 1.7rem
+    font-weight: 600
+//info buy
+.item_info
+    position: relative
+    z-index: 2
+    height: 4.4rem
+    overflow: hidden
+.portion, .presents
+    height: 2rem
+    font-size: 1.1rem
+    margin: 0
+    padding: 0
+    color: #666666
+    .number
+        font-weight: bold
+//img
+.cat
+    position: relative
+    left: -1.3rem
+    bottom: -1rem
+    z-index: 2
+    width: 24rem
+    height: auto
+//number of portions
+.weight
+    transition: all ease 1s
+    display: inline-block
+    text-align: center
+    height: 4.5rem
+    width: 4.5rem
+    position: relative
+    z-index: 3
+    top: -6rem
+    left: 15.5rem
+    background-color: #1698d9
+    color: #fff
+    border-radius: 50%
+    padding: .5rem
+//kg
+.mass
+    font-size: 3rem
+.kg
+    font-size: 1.3rem
+    line-height: 0
+.info
+    font-size: .9rem
+    color: #fff
+    text-align: center
+    margin-top: 1.3rem
+.buy
+    color: #1698d9
+    text-decoration: none
+    border-bottom: 1px dashed #1698d9
+//product selected
+.selected
+    background-color: #d91667
+    .item
+      border-color: #d91667
+      .weight
+        background-color: #d91667
+//the product is over
+.ended
+    background-color: grey
+    color: grey
+    &:hover
+      transform: none
+    .item::before 
+      content: ''
+      position: absolute
+      z-index: 4
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: white
+      opacity: .4
+    .item
+      border-color: grey
+      .weight
+        background-color: grey
+//media
+@media only screen and (min-width : 1135px) and (max-width: 1230px)
+    html
+        font-size: .9rem
+@media only screen and (min-width : 1005px) and (max-width: 1135px)
+    html
+        font-size: .8rem
+    .info
+        font-size: 1.2rem
+        width: 22.5rem
+@media only screen and (min-width : 720px) and (max-width: 1005px)
+    .body
+        min-height: 100vh
+    .title
+        font-size: 2.5rem
+    .info
+        font-size: 1.3rem
+    html
+        font-size: .75rem
+    .border
+        width: 22.7rem
+        height: 35.7rem
+    .items
+        flex-wrap: wrap
+        justify-content: center
+    #first
+        margin: auto 34%
+        margin-bottom: 3rem
+    #second
+        margin-right: 2rem
+    #third
+        margin-left: 2rem
+    .info
+        width: 22.7rem
+    .main
+        margin-bottom: 3rem
+@media only screen and (min-width : 100px) and (max-width: 719px)
+    html
+        font-size: .9rem
+    .containe
+        width: 90%
+        margin: auto
+    .info
+        font-size: 1.3rem
+        width: 22.5rem
+    .items
+        flex-direction: column
+        align-items: center
+    .info
+        margin-bottom: 5rem
